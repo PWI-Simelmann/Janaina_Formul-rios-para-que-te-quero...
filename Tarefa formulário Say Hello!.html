@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulário</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>
+        .formulario {
+            width: 300px;
+            padding: 30px;
+            border: 2px solid #e211ab29;
+            background-color: #d2d1bc38;
+        }
+        
+        .formulario p {
+            width: 100%;
+            font-size: 1.8em;
+        }
+        
+        .field {
+            width: 100%;
+            margin: 25px 0;
+        }
+        
+        .field label,
+        .field span {
+            padding-left: 0px;
+            font-size: 1.1em;
+            display: block;
+            width: 100%;
+        }
+        
+        input[type=text],
+        input[type=email],
+        textarea {
+            width: 90%;
+            padding-left: 15px;
+            height: 0px;
+            line-height: 0px;
+            border-radius: 0px;
+            border: 0px solid #000;
+            outline: none;
+        }
+        
+        textarea {
+            line-height: 0px;
+            padding: 1px;
+            height: 0px;
+            resize: none;
+        }
+        
+        input[type=submit] {
+            display: block;
+            background-color: #00FFFF;
+            box-shadow: inset 1px 1px 4px 8px rgba(90, 7, 223, 0.15);
+            height: 35px;
+            outline: 1px;
+            cursor: pointer;
+            width: 200px;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 15px;
+            background-image: linear-gradient(to top, #4d90fe, #2ada2a96, rgb(210 222 31));
+        }
+        
+        p {
+            display: block;
+            margin-block-start: 1.5em;
+            margin-block-end: 1.9em;
+            margin-inline-start: 75px;
+            margin-inline-end: 0px;
+            color: #130313fa;
+        }
+        
+        body {
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="formulario" method="post">
+        <p> Say Hello!</p>
+
+        <div class="field">
+            <label for="nome"> Name:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+
+
+
+        <div class="field">
+            <label for="email"> Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+            <label for="Subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+
+        </div>
+        <div class="field">
+            <label for="message"> Message:</label>
+            <textarea name="message" id="message" required></textarea>
+        </div>
+
+        <input type="submit" name="acao" value="Send">
+    </form>
+</body>
+
+</html>
