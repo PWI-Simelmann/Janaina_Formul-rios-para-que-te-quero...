@@ -92,11 +92,7 @@
         <div class="field">
             <label for="nome"> Name:</label>
             <input type="text" id="nome" name="nome" placeholder=" Nome*" required>
-        </div>
-
-
-
-
+        <div>
         <div class="field">
             <label for="email"> Email:</label>
             <input type="email" id="email" name="email" placeholder=" E-mail*" required>
